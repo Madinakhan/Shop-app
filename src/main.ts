@@ -7,7 +7,6 @@ import { Phone } from './modal/product/Phone';
 import { UserService } from './services/UserService';
 import { ProductService } from './services/ProductService';
 
-
 export class Main {
     private userService = new UserService();
     private productService = new ProductService();
@@ -29,7 +28,7 @@ export class Main {
         return this.userService.getUsersList();
     }
     showProducts(type: string) {
-        return this.productService.getPruductByType(type);
+        return this.productService.getPruductByType('Laptop');
     }
     signUp(name: string, username: string, password: string) {
         this.userService.signUp(name, username, password)

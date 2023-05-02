@@ -3,6 +3,7 @@ import {User} from '../modal/User';
 export class UserService{
     private users: User[] = [];
     private idGenerator: number = 0;
+    
     checkUserName(newuser: string):boolean{
         for(let user of this.users){
             if(user.getuserName()==newuser) return true;
