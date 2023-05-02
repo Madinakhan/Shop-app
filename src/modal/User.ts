@@ -1,5 +1,5 @@
 export class User{
-    private id: number;
+    private id!: number;
     constructor(public name: string, public userName: string, public password: string, public balance: number){};
     getName(){
         return this.name;

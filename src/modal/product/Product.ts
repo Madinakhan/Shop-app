@@ -1,5 +1,5 @@
 export class Product{
-    private id: number;
+    private id!: number;
     constructor(public name: string, public price: number, public manufacturer: string){};
     getName(){
         return this.name;
